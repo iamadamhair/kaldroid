@@ -1,0 +1,1 @@
+Implementation of the Kaldi ASR framework on Android. Developed using the tutorial by (Eduardo Silva)[http://jcsilva.github.io/2017/03/18/compile-kaldi-android/].
