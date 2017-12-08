@@ -7,8 +7,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -41,6 +45,11 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private SpeechRecognizer recognizer;
     private HashMap<String, Integer> captions;
 
+    /*Button enButton = (Button) findViewById(R.id.en_us);
+    Button enDysButton = (Button) findViewById(R.id.en_us_dys);
+    Button enKidButton = (Button) findViewById(R.id.en_us_kid);
+    Button enDysKidButton = (Button) findViewById(R.id.en_us_dys_kid);
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,10 +61,17 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSIONS_REQUEST_RECORD_AUDIO);
             return;
         }
-        runRecognizerSetup();
+        //runRecognizerSetup();
+
+        /*enButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ProgressBar pBar = (ProgressBar) findViewById(R.id.progressBar);
+                pBar.setVisibility(View.VISIBLE);
+                pBar.animate();
+            }
+        });*/
     }
-
-
 
     private void runRecognizerSetup() {
         // Recognizer initialization is a time-consuming and it involves IO,

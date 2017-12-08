@@ -15,4 +15,45 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/en_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EN-US"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/en_us_dys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EN-US + DYS"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/en_us_kid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EN-US + KID"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/en_us_dys_kid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EN-US + DYS + KID"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="165dp" />
+
 </android.support.constraint.ConstraintLayout>
