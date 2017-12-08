@@ -45,15 +45,20 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
     private SpeechRecognizer recognizer;
     private HashMap<String, Integer> captions;
 
-    /*Button enButton = (Button) findViewById(R.id.en_us);
-    Button enDysButton = (Button) findViewById(R.id.en_us_dys);
-    Button enKidButton = (Button) findViewById(R.id.en_us_kid);
-    Button enDysKidButton = (Button) findViewById(R.id.en_us_dys_kid);
-*/
+    Button enButton;
+    Button enDysButton;
+    Button enKidButton;
+    Button enDysKidButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        enButton = (Button) findViewById(R.id.en_us);
+        enDysButton = (Button) findViewById(R.id.en_us_dys);
+        enKidButton = (Button) findViewById(R.id.en_us_kid);
+        enDysKidButton = (Button) findViewById(R.id.en_us_dys_kid);
 
         // Check if user has given permission to record audio
         int permissionCheck = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.RECORD_AUDIO);
@@ -63,14 +68,24 @@ public class MainActivity extends AppCompatActivity implements RecognitionListen
         }
         //runRecognizerSetup();
 
-        /*enButton.setOnClickListener(new View.OnClickListener() {
+        enButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ProgressBar pBar = (ProgressBar) findViewById(R.id.progressBar);
                 pBar.setVisibility(View.VISIBLE);
                 pBar.animate();
             }
-        });*/
+        });
+
+        enDysKidButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ProgressBar pBar = (ProgressBar) findViewById(R.id.progressBar);
+                pBar.setVisibility(View.VISIBLE);
+                pBar.animate();
+                
+            }
+        });
     }
 
     private void runRecognizerSetup() {
