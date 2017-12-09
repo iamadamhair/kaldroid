@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     tools:context="edu.tamu.adamhair.kaldroid.MainActivity">
 
     <TextView
+        android:id="@+id/infoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -20,32 +22,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EN-US"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/en_us_dys"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EN-US + DYS"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/en_us_kid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EN-US + KID"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintVertical_bias="0.034" />
 
     <Button
         android:id="@+id/en_us_dys_kid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EN-US + DYS + KID"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -53,7 +69,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="165dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
 
 </android.support.constraint.ConstraintLayout>
